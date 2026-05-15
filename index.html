@@ -19,6 +19,7 @@
   />
 
   <style>
+
     *{
       margin: 0;
       padding: 0;
@@ -27,29 +28,30 @@
     }
 
     body{
-      background: linear-gradient(135deg, #ffd6e7, #ffc2dc, #ff9fc5);
+      background: linear-gradient(135deg, #ffc1dc, #ff9fc5, #ff7eb3);
+      color: white;
       min-height: 100vh;
-      color: #fff;
     }
 
     .navbar{
-      background-color: rgba(255,255,255,0.15);
+      background-color: rgba(255,255,255,0.12);
       backdrop-filter: blur(10px);
     }
 
     .navbar-brand{
-      color: white !important;
       font-weight: bold;
-      font-size: 1.5rem;
+      color: white !important;
+      font-size: 1.6rem;
     }
 
     .nav-link{
       color: white !important;
+      margin-left: 15px;
       transition: 0.3s;
     }
 
     .nav-link:hover{
-      color: #ffe6f0 !important;
+      color: #ffe7f1 !important;
     }
 
     .hero{
@@ -64,17 +66,18 @@
     }
 
     .hero span{
-      color: #fff0f6;
+      color: #fff3f8;
     }
 
     .hero p{
       font-size: 1.2rem;
       margin-top: 20px;
+      line-height: 1.8;
     }
 
     .btn-custom{
       background-color: white;
-      color: #ff4f93;
+      color: #ff5a9d;
       border: none;
       padding: 12px 28px;
       border-radius: 30px;
@@ -83,17 +86,17 @@
     }
 
     .btn-custom:hover{
-      background-color: #ffe6f0;
       transform: scale(1.05);
+      background-color: #ffe7f1;
     }
 
     .card-custom{
-      background-color: rgba(255,255,255,0.15);
+      background-color: rgba(255,255,255,0.12);
       border: none;
-      border-radius: 20px;
+      border-radius: 25px;
       backdrop-filter: blur(10px);
-      color: white;
       transition: 0.3s;
+      color: white;
       height: 100%;
     }
 
@@ -102,35 +105,44 @@
     }
 
     .section-title{
-      font-size: 2.5rem;
+      text-align: center;
+      font-size: 2.7rem;
       font-weight: bold;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
+    }
+
+    .skills-icon{
+      font-size: 2rem;
+      margin-bottom: 15px;
     }
 
     footer{
-      padding: 30px 0;
+      background-color: rgba(255,255,255,0.12);
+      padding: 30px;
       text-align: center;
       margin-top: 60px;
-      background-color: rgba(255,255,255,0.12);
     }
 
     .social-icons a{
       color: white;
-      font-size: 1.8rem;
+      font-size: 2rem;
       margin: 0 10px;
       transition: 0.3s;
     }
 
     .social-icons a:hover{
-      color: #ffe6f0;
+      color: #ffe7f1;
     }
+
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg">
     <div class="container">
+
       <a class="navbar-brand" href="#">
         Ana Clara Dantas
       </a>
@@ -145,45 +157,60 @@
       </button>
 
       <div class="collapse navbar-collapse" id="menu">
+
         <ul class="navbar-nav ms-auto">
+
           <li class="nav-item">
             <a class="nav-link" href="#sobre">Sobre</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#projetos">Projetos</a>
+            <a class="nav-link" href="#curriculo">Currículo</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="#contato">Contato</a>
           </li>
+
         </ul>
+
       </div>
+
     </div>
   </nav>
 
   <!-- Hero -->
+
   <section class="hero container">
+
     <div class="row align-items-center">
 
       <div class="col-lg-7">
+
         <h1>
-          Olá, eu sou <span>Ana Clara</span>
+          Olá, eu sou
+          <span>Ana Clara</span>
         </h1>
 
         <p>
-          Estudante de Ciência de Dados, apaixonada por tecnologia,
-          análise de dados e desenvolvimento de projetos visuais
-          utilizando ferramentas como Power BI.
+          Estudante de Ciência de Dados apaixonada por tecnologia,
+          análise de dados e desenvolvimento de soluções modernas.
+          Meu foco é transformar informações em insights claros,
+          organizados e estratégicos.
         </p>
 
         <div class="mt-4">
+
           <a
-            href="https://docs.google.com/presentation/d/1N4LJJxP-pcvNcfMqpsFzWyolyJurccGmRxTL-ERy8Xc/edit?slide=id.p1#slide=id.p1"
+            href="https://docs.google.com/document/d/1CGpPAUZFh0t0SpXdHSj04_TVYvfRWsbVXpLK-eBT13o/edit?tab=t.0"
             target="_blank"
             class="btn btn-custom me-3"
           >
-            Ver Portfólio
+            Ver Currículo
           </a>
 
           <a
@@ -193,101 +220,199 @@
           >
             LinkedIn
           </a>
+
         </div>
+
       </div>
 
       <div class="col-lg-5 text-center mt-5 mt-lg-0">
+
         <img
-          src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png"
+          src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png"
           class="img-fluid"
           width="350"
         />
+
       </div>
 
     </div>
+
   </section>
 
   <!-- Sobre -->
+
   <section id="sobre" class="container py-5">
-    <h2 class="section-title text-center">
+
+    <h2 class="section-title">
       Sobre Mim
     </h2>
 
-    <div class="card card-custom p-4">
+    <div class="card card-custom p-5">
+
       <p>
         Meu nome é Ana Clara Dantas, tenho 18 anos e curso
-        Ciência de Dados. Meu principal objetivo é desenvolver
-        projetos modernos e impactantes, focados em análise
-        de dados e visualização de informações.
+        Ciência de Dados. Estou em constante evolução na área
+        de tecnologia e análise de dados, buscando desenvolver
+        soluções modernas, organizadas e eficientes.
       </p>
 
-      <p>
-        Atualmente venho construindo meu portfólio com projetos
-        utilizando Power BI e ferramentas voltadas para dados,
-        buscando evoluir constantemente na área de tecnologia.
+      <p class="mt-3">
+        Tenho interesse em visualização de dados, dashboards,
+        organização de informações e ferramentas analíticas,
+        sempre buscando unir criatividade com tecnologia.
       </p>
+
     </div>
+
   </section>
 
-  <!-- Projetos -->
-  <section id="projetos" class="container py-5">
-    <h2 class="section-title text-center">
-      Projetos
+  <!-- Currículo -->
+
+  <section id="curriculo" class="container py-5">
+
+    <h2 class="section-title">
+      Currículo
+    </h2>
+
+    <div class="card card-custom p-5 text-center">
+
+      <h3>
+        <i class="bi bi-file-earmark-person-fill"></i>
+        Currículo Profissional
+      </h3>
+
+      <p class="mt-4">
+        Acesse meu currículo completo com informações acadêmicas,
+        competências e experiências profissionais.
+      </p>
+
+      <div class="mt-4">
+
+        <a
+          href="https://docs.google.com/document/d/1CGpPAUZFh0t0SpXdHSj04_TVYvfRWsbVXpLK-eBT13o/edit?tab=t.0"
+          target="_blank"
+          class="btn btn-light rounded-pill px-5"
+        >
+          Abrir Currículo
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Habilidades -->
+
+  <section id="habilidades" class="container py-5">
+
+    <h2 class="section-title">
+      Habilidades Pessoais
     </h2>
 
     <div class="row g-4">
 
+      <!-- Proatividade -->
+
       <div class="col-md-6">
+
         <div class="card card-custom p-4">
+
+          <div class="skills-icon">
+            <i class="bi bi-lightning-charge-fill"></i>
+          </div>
+
           <h3>
-            <i class="bi bi-bar-chart-fill"></i>
-            Projeto Power BI
+            Proatividade
           </h3>
 
           <p class="mt-3">
-            Dashboard desenvolvido utilizando Power BI para
-            análise e visualização de dados.
+            Iniciativa constante na busca por soluções e
+            antecipação de necessidades em projetos de dados.
           </p>
 
-          <a
-            href="https://docs.google.com/presentation/d/1N4LJJxP-pcvNcfMqpsFzWyolyJurccGmRxTL-ERy8Xc/edit?slide=id.p1#slide=id.p1"
-            target="_blank"
-            class="btn btn-light mt-3"
-          >
-            Ver Projeto
-          </a>
         </div>
+
       </div>
 
+      <!-- Organização -->
+
       <div class="col-md-6">
+
         <div class="card card-custom p-4">
+
+          <div class="skills-icon">
+            <i class="bi bi-folder2-open"></i>
+          </div>
+
           <h3>
-            <i class="bi bi-graph-up-arrow"></i>
-            Portfólio de Dados
+            Organização
           </h3>
 
           <p class="mt-3">
-            Projetos voltados para análise de dados,
-            dashboards interativos e apresentação visual
-            de métricas.
+            Metodologia rigorosa no tratamento de dados e
+            estruturação de fluxos de trabalho eficientes.
           </p>
 
-          <a
-            href="https://docs.google.com/presentation/d/1N4LJJxP-pcvNcfMqpsFzWyolyJurccGmRxTL-ERy8Xc/edit?slide=id.p1#slide=id.p1"
-            target="_blank"
-            class="btn btn-light mt-3"
-          >
-            Abrir Portfólio
-          </a>
         </div>
+
+      </div>
+
+      <!-- Comunicação -->
+
+      <div class="col-md-6">
+
+        <div class="card card-custom p-4">
+
+          <div class="skills-icon">
+            <i class="bi bi-chat-dots-fill"></i>
+          </div>
+
+          <h3>
+            Comunicação
+          </h3>
+
+          <p class="mt-3">
+            Capacidade de traduzir dados complexos em insights
+            claros para diferentes públicos.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- Adaptabilidade -->
+
+      <div class="col-md-6">
+
+        <div class="card card-custom p-4">
+
+          <div class="skills-icon">
+            <i class="bi bi-arrow-repeat"></i>
+          </div>
+
+          <h3>
+            Adaptabilidade
+          </h3>
+
+          <p class="mt-3">
+            Facilidade em aprender novas tecnologias e se ajustar
+            a ambientes dinâmicos.
+          </p>
+
+        </div>
+
       </div>
 
     </div>
+
   </section>
 
   <!-- Contato -->
+
   <section id="contato" class="container py-5">
-    <h2 class="section-title text-center">
+
+    <h2 class="section-title">
       Contato
     </h2>
 
@@ -298,30 +423,36 @@
       </h4>
 
       <p class="mt-3">
-        Entre em contato pelo LinkedIn para oportunidades,
-        networking e projetos.
+        Entre em contato através do LinkedIn.
       </p>
 
       <div class="social-icons mt-4">
+
         <a
           href="https://www.linkedin.com/in/ana-clara-dantas-baa9313b0/"
           target="_blank"
         >
           <i class="bi bi-linkedin"></i>
         </a>
+
       </div>
 
     </div>
+
   </section>
 
   <!-- Footer -->
+
   <footer>
+
     <p>
-      © 2026 Ana Clara Dantas • Portfólio de Ciência de Dados
+      © 2026 Ana Clara Dantas • Ciência de Dados
     </p>
+
   </footer>
 
   <!-- Bootstrap JS -->
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
   </script>
